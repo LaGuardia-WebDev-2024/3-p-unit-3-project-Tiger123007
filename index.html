@@ -1,66 +1,215 @@
-<!-- Unit 3 Project
-Requirements
-[  ] Two External Links
-[  ] Table (minimum 2 Columns by 3 Rows)
-[  ] Three CSS Rules
-[  ] Three Images
 
-Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include :hover Effect
-[ no ] Feature 2 - Change the Cursor
-[ no ] Feature 3 - Make a Background Color Semi-Transparent
-[ no ] Feature 4 - Include at Flip Card
-[ no ] Feature 5 - Include at least two Internal links
+<!-- 
+Unit 3 Project - Recipe Book
+By: Maximilian Tiger Beni Heinsohn
+Feature Added: Internal Links (#pretzel, #schnitzel, #apfelstrudel)
+Requirements:
+[x] Two External Links
+[x] Table (2 columns x 3+ rows)
+[x] Three CSS Rules
+[x] Three Images
+[x] Feature 5 - Two Internal Links
 -->
 
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Project: Recipe book</title>
+  <title>Maximilian Tiger Beni Heinsohn's Bavarian Recipe Book</title>
   <meta charset="utf-8">
+
   <style>
+    /* === CSS Styles === */
+
+    body {
+      background-color: rgba(255, 255, 200, 0.9); /* soft yellow background */
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    h1 {
+      color: darkred;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: darkgreen;
+    }
+
+    a {
+      color: darkblue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: orange; /* hover effect */
+    }
+
+    table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    img {
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+    }
   </style>
 </head>
 
 <body>
 
-  <h1>Maximilian Tiger Beni Heinsohn's Recipe Book</h1>
-<h1>Food From BAYERNNNN!</h1>
-  <h2>Contents:</h2>
+  <h1>🍽️ Maximilian’s Bavarian Recipe Book 🍽️</h1>
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  
-  </ol>
+  <h2>Food From Bayern!</h2>
 
-  <h2 id="?">Recipe #1</h2>
+  <!-- Table of Contents -->
+  <h3>Contents:</h3>
+  <ul>
+    <li><a href="#Pretzel">Pretzel</a></li>
+    <li><a href="#schnitzel">Schnitzel</a></li>
+    <li><a href="#apfelstrudel">Apfelstrudel</a></li>
+  </ul>
+
+  <div class="center">
+    <img src="20230911-GERMAN-PRETZELS-ANDREW-JANJIGIAN-75hero_1-e8187b77b4204a4c9ed5aaa5618fd8f1.jpg" alt="Pretzel" width="200">
+    <img src="brezenschnitzel-bayerischer-kartoffelsalat.jpg" alt="Schnitzel" width="200">
+    <img src="maxresdefault.jpg" width="200">
+  </div>
+
+  <!-- Pretzel Recipe -->
+  <h2 id="pretzel">🥨 Pretzel</h2>
 
   <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
+    <li>Time: Around 2 hours</li>
+    <li>Serves: About 6 people</li>
   </ul>
 
   <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Ingredient #1</td>
-        <td>Quantity #1</td>
-      </tr>
-    </tbody>
+    <tr>
+      <th>Ingredients</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Flour</td>
+      <td>4 cups</td>
+    </tr>
+    <tr>
+      <td>Warm water</td>
+      <td>1 1/2 cups</td>
+    </tr>
+    <tr>
+      <td>Salt</td>
+      <td>2 tsp</td>
+    </tr>
+    <tr>
+      <td>Yeast</td>
+      <td>1 packet</td>
+    </tr>
   </table>
 
-  <p><strong>Step 1:</strong> Do something.
-  </p>
+  <p><strong>Step 1:</strong> Mix the yeast and warm water, then wait a few minutes.</p>
+  <p><strong>Step 2:</strong> Add flour and salt, then knead the dough for a while.</p>
+  <p><strong>Step 3:</strong> Shape into pretzels and bake until golden brown.</p>
 
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
+  <p><em>Source: <a href="https://www.kingarthurbaking.com/recipes/homemade-soft-pretzels-recipe" target="_blank">King Arthur Baking</a></em></p>
+
+  <hr>
+
+  <!-- Schnitzel Recipe -->
+  <h2 id="schnitzel">🥩 Schnitzel</h2>
+
+  <ul>
+    <li>Time: About 45 minutes</li>
+    <li>Serves: 4</li>
+  </ul>
+
+  <table>
+    <tr>
+      <th>Ingredients</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Chicken or pork cutlets</td>
+      <td>4 pieces</td>
+    </tr>
+    <tr>
+      <td>Eggs</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Bread crumbs</td>
+      <td>1 cup</td>
+    </tr>
+    <tr>
+      <td>Flour</td>
+      <td>1/2 cup</td>
+    </tr>
+  </table>
+
+  <p><strong>Step 1:</strong> Pound the cutlets flat and season with salt and pepper.</p>
+  <p><strong>Step 2:</strong> Coat them in flour, then eggs, then breadcrumbs.</p>
+  <p><strong>Step 3:</strong> Fry them until they’re golden brown and crispy.</p>
+
+  <p><em>Source: <a href="https://www.daringgourmet.com/traditional-german-pork-schnitzel/" target="_blank">Daring Gourmet</a></em></p>
+
+  <hr>
+
+  <!-- Apfelstrudel Recipe -->
+  <h2 id="apfelstrudel">🍎🥧 Apfelstrudel</h2>
+
+  <ul>
+    <li>Time: Around 1 and a half hours</li>
+    <li>Serves: 8</li>
+  </ul>
+
+  <table>
+    <tr>
+      <th>Ingredients</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Puff pastry</td>
+      <td>1 sheet</td>
+    </tr>
+    <tr>
+      <td>Apples</td>
+      <td>3, sliced</td>
+    </tr>
+    <tr>
+      <td>Sugar</td>
+      <td>1/2 cup</td>
+    </tr>
+    <tr>
+      <td>Cinnamon</td>
+      <td>1 tsp</td>
+    </tr>
+  </table>
+
+  <p><strong>Step 1:</strong> Mix apples, sugar, and cinnamon in a bowl.</p>
+  <p><strong>Step 2:</strong> Roll out the pastry and fill it with the apple mix.</p>
+  <p><strong>Step 3:</strong> Bake it in the oven at 375°F until golden brown.</p>
+
+  <p><em>Source: <a href="https://www.allrecipes.com/recipe/12548/german-apple-strudel/" target="_blank">AllRecipes</a></em></p>
+
+  <hr>
+
+  <footer>
+    <p><a href="#top">Back to Top</a></p>
+    <p>© 2025 Maximilian Heinsohn | Bavarian Recipe Book</p>
+  </footer>
 
 </body>
-
 </html>
